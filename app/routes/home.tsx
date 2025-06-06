@@ -1,5 +1,10 @@
-function Home() {
-  return <h1>works</h1>
-}
+import { Header } from '~/components/Header'
 
-export { Home }
+export default function Home() {
+  return (
+    <>
+      <Header />
+      <h1>works</h1>
+    </>
+  )
+}

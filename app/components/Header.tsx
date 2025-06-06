@@ -1,14 +1,26 @@
+import { Link } from 'react-router'
+import ThemeToggler from './ThemeToggler'
+
 function Header() {
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm">
+      <nav className="navbar bg-base-100 px-4 shadow-md">
         <div className="flex-1">
-          <a className="Hover:cursor-pointer text-xl">Hire Me</a>
+          <Link to="/" className="text-xl hover:cursor-pointer">Hire Me</Link>
         </div>
         <div className="flex gap-2">
-          <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+          <div>
+            <a className="btn btn-ghost text-md">Saved Jobs</a>
+          </div>
+          <div>
+            <ThemeToggler />
+          </div>
           <div className="dropdown dropdown-end">
-            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost btn-circle avatar"
+            >
               <div className="w-10 rounded-full">
                 <img
                   alt="Tailwind CSS Navbar component"
@@ -26,12 +38,16 @@ function Header() {
                   <span className="badge">New</span>
                 </a>
               </li>
-              <li><a>Settings</a></li>
-              <li><a>Logout</a></li>
+              <li>
+                <a>Settings</a>
+              </li>
+              <li>
+                <a>Logout</a>
+              </li>
             </ul>
           </div>
         </div>
-      </div>
+      </nav>
     </>
   )
 }

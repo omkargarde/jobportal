@@ -7,15 +7,18 @@ export default function Home() {
       <HomeLayout>
         <h1>Welcome</h1>
         <div className="flex justify-center">
-          <label className="input input-xl w-full max-w-full lg:mx-16">
-            <SearchIcon className="text-2xl" />
-            <input
-              id="search"
-              type="search"
-              placeholder="Search"
-              className=""
-            />
-          </label>
+          <form className="w-full max-w-full lg:mx-16">
+            <label className="input input-xl w-full" htmlFor="search">
+              <SearchIcon className="text-2xl" aria-hidden="true" />
+              <span className="sr-only">Search jobs</span>
+              <input
+                id="search"
+                type="search"
+                placeholder="Search jobs"
+                name="search"
+              />
+            </label>
+          </form>
         </div>
       </HomeLayout>
     </>

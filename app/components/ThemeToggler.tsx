@@ -62,4 +62,18 @@ export default function ThemeToggler() {
       </button>
     )
   }
+
+  // Fallback for invalid theme values
+  return (
+    <button
+      type="button"
+      className="btn btn-ghost join-item"
+      aria-label="Switch to dark theme"
+      onClick={() => setTheme('dark')}
+    >
+      <span className="text-xl">
+        <MoonIcon />
+      </span>
+    </button>
+  )
 }

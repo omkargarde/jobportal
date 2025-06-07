@@ -54,5 +54,9 @@
       "file": "./.vscode/daisyui.md"
     }
   ],
-  "cSpell.words": ["daisyui", "prefersdark"]
+  "cSpell.words": [
+    "daisyui",
+    "prefersdark",
+    "rapidapi"
+  ]
 }
